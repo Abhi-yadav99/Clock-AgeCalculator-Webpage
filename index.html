@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time & Age Calculator</title>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Clock Section -->
+        <div class="clock-section">
+            <div class="time" id="timeDisplay">00:00:00</div>
+            <div class="date-details">
+                <span id="dayName">Day</span>, 
+                <span id="dateNum">00</span> 
+                <span id="monthName">Month</span> 
+                <span id="yearNum">2023</span>
+            </div>
+        </div>
+
+        <!-- Age Calculator Section -->
+        <div class="age-section">
+            <h2>Age Calculator</h2>
+            <div class="input-group">
+                <input type="date" id="birthDate">
+            </div>
+            <button onclick="calculateAge()">Calculate Age</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
