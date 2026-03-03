@@ -1,0 +1,99 @@
+/* CSS: Styling the webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Clock Section Styles */
+.clock-section {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 1.5rem;
+}
+
+.time {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.date-details {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.date-details span {
+    margin: 0 5px;
+    font-weight: 400;
+}
+
+/* Age Calculator Section Styles */
+.age-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-height: 30px;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+}
